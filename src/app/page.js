@@ -8,8 +8,9 @@ import {
 } from "react-icons/ai";
 import deved from "../../public/dev-ed-wave.png";
 import design from "../../public/design.png";
-// import code from "../../public/code.png";
-// import consulting from "../../public/consulting.png";
+import code from "../../public/code.png";
+import consulting from "../../public/consulting.png";
+import avatar from "../../public/avatar.png";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <meta name="description" content="Ace7260's personal website." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-white px-10">
+      <main className="bg-white px-5">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developedbyed</h1>
@@ -58,7 +59,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div>
+          <div className="mb-10">
             <h3 className="text-3xl py-1">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
               Since the begining of my journey as freelance designer and
@@ -68,21 +69,92 @@ export default function Home() {
               with talented people to create digital for both business and
               consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800">
+            <p className="text-md py-2 leading-8 text-gray-800 ">
               I offer from wide range of services, including programming and
               teaching.
             </p>
           </div>
-          <div>
-            <div className="text-center shadow-lg p-10">
-              <Image src={design} alt="" width={150} height={100} />
+          <div className="flex mr-5 gap-6 p-4 flex-wrap justify-center">
+            <div className="text-center shadow-lg pb-3">
+              <div className="with:100% flex justify-center">
+                <Image
+                  src={design}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="text-center border-l-orange-800"
+                />
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Beautiful Designs
               </h3>
               <p className="py-2">
                 Creating elegant designs suited for your needs design theory
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
+              <h4 className="py-1 text-teal-600">Design tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg pb-3">
+              <div className="with:100% flex justify-center">
+                <Image
+                  src={avatar}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="text-center border-l-orange-800"
+                />
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs design theory
+              </p>
+              <h4 className="py-1 text-teal-600">Design tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg pb-3">
+              <div className="with:100% flex justify-center">
+                <Image
+                  src={code}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="text-center border-l-orange-800"
+                />
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs design theory
+              </p>
+              <h4 className="py-1 text-teal-600">Design tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg pb-3">
+              <div className="with:100% flex justify-center">
+                <Image
+                  src={consulting}
+                  alt=""
+                  width={100}
+                  height={100}
+                  className="text-center border-l-orange-800"
+                />
+              </div>
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Creating elegant designs suited for your needs design theory
+              </p>
+              <h4 className="py-1 text-teal-600">Design tools I use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
